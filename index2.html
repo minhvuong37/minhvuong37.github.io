@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	<script src="main.js"></script>
+    <title>Sản phẩm của chúng tôi</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+			<div class="header__bot">
+				<div class="grid">
+					<div class="navbar__menu">
+						<ul class="navbar__menu-left">
+							<li class="navbar__menu-list">
+								<i class="item-list fas fa-laptop"></i>
+								<a href="#" class="navbar__menu-item">Laptop</a>
+							</li>
+							<li class="navbar__menu-list">
+								<i class="item-list fas fa-tablet-alt"></i>
+								<a href="#" class="navbar__menu-item">Tablet</a>
+							</li>
+							<li class="navbar__menu-list">
+								<i class="item-list fas fa-mobile-alt"></i>
+								<a href="#" class="navbar__menu-item">Điện thoại</a>
+							</li>
+							<li class="navbar__menu-list">
+								<i class="item-list fas fa-headphones-alt"></i>
+								<a href="#" class="navbar__menu-item">Phụ kiện</a>
+							</li>						
+						</ul>
+						<ul class="navbar__menu-right">
+							<li class="navbar__menu-list">
+								<a href="#" class="navbar__menu-item">Hỗ trợ</a>
+							</li>
+							<li class="navbar__menu-list">
+								<a href="#" class="navbar__menu-item">Sửa chữa</a>
+							</li>
+							<li class="navbar__menu-list">
+								<a href="#" class="navbar__menu-item">Tin tức</a>
+							</li>
+							<li class="navbar__menu-list">
+								<a href="#" class="navbar__menu-item">Liên hệ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav__menu-moblie" >
+						<button class="nav__menu-mobile--btn" onclick="openNav()">
+							<i style="color: white" class="fas fa-bars" ></i>
+						</button>
+					</div>
+					<div class="nav__overlay" onclick="closeNav(), toClose()"></div>
+					<nav class="nav__mobile">
+						<div class="nav__mobile-close">
+							<i class="fas fa-times" onclick="closeNav()"></i>
+						</div>
+						<li class="nav__mobile-list">
+							<a href="#" class="nav__mobile-item">Laptop</a>
+						</li>
+						<li class="nav__mobile-list">
+							<a href="#" class="nav__mobile-item">Điện thoại</a>
+						</li>
+						<li class="nav__mobile-list">
+							<a href="#" class="nav__mobile-item">Phụ kiện</a>
+						</li>
+						<li class="nav__mobile-list">
+							<a href="#" class="nav__mobile-item">Đăng nhập</a>
+						</li>
+						<li class="nav__mobile-list">
+							<a href="#" class="nav__mobile-item">Update...</a>
+						</li>
+					</nav>
+					
+				</div>
+				<i class="header__mobile-search fas fa-search"></i>
+			</div>
+		</div>
+        <div class="container">
+            <div class="main-product">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__column-6">
+                            <div class="product-img">
+                                <div class="main-item" >
+                                    <img src="./images/latitude3510.png" id="main-img">
+                                </div>
+                                <div class="list-items">
+                                    <img src="./images/laptopdell inspiron 7501.png" onclick="changeImg(this)" />
+                                    <img src="./images/dell_inspiron_3501_6_11.jpg" onclick="changeImg(this)" />
+                                    <img src="./images/latitude3510.png" onclick="changeImg(this)" />
+                                </div>
+                            </div>
+                            <script>
+                                function changeImg(image) {
+                                    var bigImg = document.getElementById('main-img');
+                                    bigImg.src = image.src
+                                }
+                            </script>
+                        </div>
+                        <div class="grid__column-6">
+                            <div class="product-info">
+                                <h2>
+                                    Laptop Latitude 3510 13'' 16GB/256GB 2021 - Chính hãng Dell Việt Nam
+                                </h2>
+                                <div class="product-price">
+                                    <strike>18.000.000vnđ</strike>
+                                    <strong style="color: red;">15.999.000vnđ</strong>
+                                </div>
+                                <h3 style="margin-bottom: 5px;">Chọn màu</h3>
+                                <div class="product-color">
+                                    <img src="https://media.canifa.com/catalog/swatches/1/21x21/media/sb060.png" alt="SB060" width="21" height="21">
+                                    <img src="https://media.canifa.com/catalog/swatches/1/21x21/media/sa534.png" alt="SA534" width="21" height="21">
+                                </div>
+                                <h3 style="margin-bottom: 5px;">Nhập số lượng</h3>
+                                <div class="product-number">
+                                    <input type="" class="product-number__input">
+                                    <div class="control-number">
+                                        <button href="#" class="btn-control"><i class="fas fa-angle-up"></i></button>
+                                        <button href="#" class="btn-control"><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                </div>
+                                <button class="product-addtocart">THÊM VÀO GIỎ HÀNG</button>
+                                <span><a href="index.html"><button class="product-addtocart" style="border: 2px solid black; color: black;">QUAY VỀ TRANG CHỦ</button></a></span>
+                                <br>
+                                <p>THÔNG TIN SẢN PHẨM</p>
+                                <P>CPU: Intel Core i5 10210U
+                                    <br>
+                                    RAM: 8GB
+                                    <br>
+                                    Ổ cứng: 256GB SSD
+                                    <br>
+                                    VGA: Onboard
+                                    <br>
+                                    Màn hình: 14 inch HD
+                                    <br>
+                                    HĐH: Linux Fedora
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="main-list hide-on-mobile">
+                <h3 style="text-align: center;">Tham khảo thêm sản phẩm</h3>
+                <div class="product-list-items">
+                    <img src="./images/dell latitude 7390.jpg" alt="image">
+                    <img src="./images/dell_inspiron_3501_6_11.jpg" alt="image">
+                    <img src="./images/laptopdell inspiron 7501.png" alt="image">
+                    <img src="./images/latitude3510.png" alt="image">
+                    <img src="./images/macbookair.png" alt="image">
+                </div>
+            </div>
+            <hr>
+            <div class="footer hide-on-mobile">
+                <div class="grid">
+                    <div class="footer-bgc">
+                        <div class="grid__row">
+                        <div class="grid__column-2">
+                            <div class="footer-aboutshop">
+                                <img src="images/logo_shopee.png" class="footer-aboutshop__logo">
+                                <p style="line-height: 1.2rem;">Hệ thống shop chuyên bán laptop, điện thoại, phụ kiện chính hãng giá rẻ
+                                đã có từ những năm 1900, chất lượng dịch vụ tuyệt vời!</p>
+                                <div class="footer-aboutshop__connect">
+                                    <i class="footer-aboutshop__icon fab fa-facebook"></i>
+                                    <i class="footer-aboutshop__icon fab fa-instagram"></i>
+                                    <i class="footer-aboutshop__icon fab fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-2">
+                            <div class="footer-ser">
+                                <h3 class="footer__header">Hỗ trợ - Dịch vụ</h3>
+                                <ul class="footer-ser__list">
+                                    <li class="footer-ser__link">
+                                        <a href="#" class="footer-ser__item">Mua hàng trả góp</a>
+                                    </li>
+                                    <li class="footer-ser__link">
+                                        <a href="#" class="footer-ser__item">Hướng dẫn đặt hàng thanh toán</a>
+                                    </li>
+                                    <li class="footer-ser__link">
+                                        <a href="#" class="footer-ser__item">Chính sách bảo hành</a>
+                                    </li>
+                                    <li class="footer-ser__link">
+                                        <a href="#" class="footer-ser__item">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li class="footer-ser__link">
+                                        <a href="#" class="footer-ser__item">Tra cứu đơn hàng</a>
+                                    </li>			
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__column-2">
+                            <div class="footer-pay">
+                                <h3 class="footer__header">Thanh toán miễn phí</h3>
+                                <img src="images/pay.png" class="footer-pay__img">
+                            </div>
+                        </div>
+                        <div class="grid__column-2">
+                            <div class="footer-contact">
+                                <h3 class="footer__header">Thông tin liên hệ</h3>
+                                <ul class="footer-contact__list">
+                                    <li class="footer-contact__link">
+                                        <a href="#" class="footer-contact__item">Chăm sóc khách hàng</a>
+                                    </li>
+                                    <li class="footer-contact__link">
+                                        <a href="#" class="footer-contact__item">Hỗ trợ bảo hành</a>
+                                    </li>
+                                    <li class="footer-contact__link">
+                                        <a href="#" class="footer-contact__item">Hỗ trợ sửa chữa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <p>© 2020. CÔNG TY CỔ PHẦN XÂY DỰNG VÀ ĐẦU TƯ THƯƠNG MẠI VƯƠNG THANH. MST: 337799. (Đăng ký lần đầu: Ngày 17 tháng 07 năm 1999, Đăng ký thay đổi ngày 03/03/1999)</p>
+                        <strong>GP số 426/GP-TTĐT do sở TTTT Hà Nội cấp ngày 01/01/2021</strong>
+                        <p>Địa chỉ: 22 Thượng Đình, P.Thượng Đình, Q.Thanh Xuân, Hà Nội. Điện thoại: 0981.577.536.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
